@@ -1,10 +1,4 @@
-/**
-* Template Name: DevFolio
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # Font & Color Variables
@@ -1627,4 +1621,61 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+/*  optimising view   */
+/* Default styling for desktop */
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Large desktops (wider than 1200px) */
+@media only screen and (min-width: 1200px) {
+  body {
+      font-size: 18px;
+  }
+}
+
+/* Tablets (between 768px and 1200px) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  body {
+      font-size: 16px;
+  }
+
+  /* Adjust layout for tablets here */
+  .container {
+      padding: 10px;
+      flex-direction: column;
+  }
+}
+
+/* Smartphones (less than 768px) */
+@media only screen and (max-width: 767px) {
+  body {
+      font-size: 14px;
+  }
+
+  /* Adjust layout for smartphones here */
+  .container {
+      padding: 5px;
+      flex-direction: column;
+  }
+
+  img {
+      width: 100%;
+      height: auto;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
